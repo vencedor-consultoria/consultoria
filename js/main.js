@@ -29,6 +29,7 @@ form.addEventListener('submit', (e) => {
         res.json()
     })
     .then(data => {
+        console.log(data);
         if (data.msg === 'success') {
             alert('Message Sent.');
             form.reset();
